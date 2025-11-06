@@ -244,15 +244,15 @@ For this you have to create IAM user with AmazonS3FullAccess Policy attached and
     → Attach Policies Directly → AmazonS3FullAcess → Next → Create User
 2. Click on the created User → Create Acess Key → Application running outside AWS
     📌 Important: Save them safely — you won’t be able to view the secret key again!
-        Acess Key: AKIA54UKYHR4TCEXLV5P 
-        secret access key : XI/dqYbZXQQido+Emo/vCNc1zcWY1LqlivICe7sd
+        Acess Key: ********************* 
+        secret access key : *********************
 */
 
 CREATE OR REPLACE STAGE manage_db.staging_assets.stage_external_aws_snowflakedatanaziraa
   URL = 's3://snowflake-data-naziraa/csv/'
   CREDENTIALS = (
-    AWS_KEY_ID = 'AKIA54UKYHR4TCEXLV5P'
-    AWS_SECRET_KEY = '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'
+    AWS_KEY_ID = ********************
+    AWS_SECRET_KEY = ****************************
   );
 
 list @manage_db.staging_assets.stage_external_aws_snowflakedatanaziraa;
@@ -278,16 +278,16 @@ You can also create a IAM user with FullAccess to a specific bucket
 Click on the created User → Create Acess Key → Application running outside AWS
 📌 Important: Save them safely — you won’t be able to view the secret key again!
 
-Access Key= 'AKIA54UKYHR4XV2DAPHM'
-Secret Access Key = 'WE2wDWKGsHDoBFCJGpJirmaOyMHhbIlGrxoICNfa'
+Access Key= **********************
+Secret Access Key = **********************
 */
 
 
 CREATE OR REPLACE STAGE manage_db.staging_assets.stage_external_aws_snowflakedatanaziraa
   URL = 's3://snowflake-data-naziraa/csv/'
   CREDENTIALS = (
-    AWS_KEY_ID = 'AKIA54UKYHR4XV2DAPHM'
-    AWS_SECRET_KEY = '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'
+    AWS_KEY_ID = **********************
+    AWS_SECRET_KEY = **********************
   );
 
 list @manage_db.staging_assets.stage_external_aws_snowflakedatanaziraa;
